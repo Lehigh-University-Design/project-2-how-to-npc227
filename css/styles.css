@@ -19,3 +19,43 @@ h1 {
 p {
 
 }
+
+/* Custom Classes / Styles */
+
+/*
+// <weight>: Use a value from 400 to 800
+// <uniquifier>: Use a unique and descriptive class name
+
+.wix-madefor-text-<uniquifier> {
+  font-family: "Wix Madefor Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} Base code for using "Wix Madefor Text" from Google fonts*/
+
+.sticky-nav-bar {
+    position: sticky;
+    width: auto;
+    height: 90px;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1000;
+    font-weight: 200;
+    font-style: normal;
+    background-color: rgba(127, 185, 222, 1);
+    color: white;
+
+    /*specific item positioning*/
+    display: flex;
+    flex-direction: row;
+
+    img {
+        scale: 60%;
+    }
+
+    a {
+        /*margin-top: 5%;*/
+        display: flex;
+        justify-content: space-between;
+    }
+}
