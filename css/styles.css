@@ -2,23 +2,18 @@
 
 /* Global variables */
 
-:root {
-    
-}
+:root {}
 
 /* Main styles */
 
 body {
-
+    padding: 0;
+    margin: 0;
 }
 
-h1 {
+h1 {}
 
-}
-
-p {
-
-}
+p {}
 
 /* Custom Classes / Styles */
 
@@ -49,14 +44,23 @@ p {
     /*specific item positioning*/
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 40px;
 
-    img {
-        scale: 60%;
+    #logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        img {
+            height: 75%;
+        }
     }
 
-    a {
-        /*margin-top: 5%;*/
+    .navlinks {
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        gap: 35px;
     }
 }
