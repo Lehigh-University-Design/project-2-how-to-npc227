@@ -35,6 +35,7 @@ p {
 
 .sticky-nav-bar {
     position: sticky;
+    top: 0;
     width: auto;
     height: 90px;
     font-family: "Wix Madefor Text", sans-serif;
