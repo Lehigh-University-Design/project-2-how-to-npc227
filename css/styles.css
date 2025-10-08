@@ -26,9 +26,19 @@ p {}
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-} Base code for using "Wix Madefor Text" from Google fonts*/
+} Base code for using "Wix Madefor Text" from Google fonts
+ 
+.yusei-magic-regular {
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*/
 
 .sticky-nav-bar {
+    /*high z-index because it was going behind main content on home page*/
+    z-index: 9999;
     position: sticky;
     top: 0;
     width: auto;
@@ -63,5 +73,44 @@ p {}
         flex-direction: row;
         margin-top: 1em;
         gap: 35px;
+    }
+}
+
+#home-header {
+    margin-top: 2em;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgba(21, 52, 86, 1);
+}
+
+#home-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    /*height: 300px;
+    width: 200px;*/
+    background-color: rgba(215, 237, 249, 1);
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    p {
+        margin-top: 15%;
+        color: rgba(21, 52, 86, 1);
+        margin-bottom: 5%; 
+        margin-left: 5%;
+        width: auto;
+    }
+
+    img {
+        margin-top: 15%;
+        margin-bottom: 5%;
+        margin-right: 5%;
     }
 }
