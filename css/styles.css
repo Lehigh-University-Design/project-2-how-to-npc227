@@ -61,6 +61,7 @@ p {}
     .navlinks {
         display: flex;
         flex-direction: row;
+        margin-top: 1em;
         gap: 35px;
     }
 }
