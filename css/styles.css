@@ -73,7 +73,7 @@ p {}
         flex-direction: row;
         margin-top: 2em;
         gap: 35px;
-        
+
         a {
             color: white;
             text-decoration: none;
@@ -107,6 +107,7 @@ flex overall and text, grid for images
     position: relative;
     max-width: 1080px;
     margin: 0 auto;
+    margin-bottom: 5em;
 
     /*
     p {
@@ -147,4 +148,36 @@ flex overall and text, grid for images
 #footer {
     background-color: #153456;
     color: white;
+}
+
+.pattern-choices {
+    /*Want similar margins to home page but allow paterns to stand on their own
+    without a background color*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*height: 300px;
+    width: 200px;*/
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+
+}
+
+/*Template for laying out pattern previews when on the 
+pattern selection page*/
+.pattern-preview {
+    margin: 0 auto;
+    margin-top: 4em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 470px;
+    align-items: center;
+    gap: 13px;
+}
+
+.get-started-button {
+    background-color: #153456;
 }
