@@ -176,13 +176,16 @@ pattern selection page*/
     width: auto;
     max-width: 470px;
     align-items: center;
+    justify-content: space-around;
     gap: 13px;
 
     h1 {
         font-family: "Yusei Magic";
+        color: rgba(21, 52, 86, 1);
     }
 
     P {
+        color: rgba(21, 52, 86, 1);
         font-family: Verdana;
     }
 }
@@ -191,8 +194,14 @@ pattern selection page*/
     background-color: #153456;
     text-decoration: none;
     color: white;
+    font-family: Verdana;
+    width: 125px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 
-    
 }
 
 /*Template for supply list and video of different patterns*/
