@@ -94,6 +94,30 @@ p {}
     justify-content: center;
 }
 
+.patt-head{
+    margin-top: 1em;
+    color: #153456;
+    font-family: "Yusei Magic";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.step-head{
+    justify-content: center;
+    color: #153456;
+    font-family: "Yusei Magic";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
 /*
 flex overall and text, grid for images
 */
@@ -132,6 +156,7 @@ flex overall and text, grid for images
         margin-bottom: 5%;
         display: flex;
         flex-direction: column;
+        line-height: 150%;
     }
 
     #home-images {
@@ -143,12 +168,19 @@ flex overall and text, grid for images
         grid-template-rows: 1fr 1fr;
         justify-content: space-between;
 
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
     }
 }
 
 #footer {
     background-color: #153456;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    text-align: center;
 }
 
 .pattern-choices {
@@ -187,6 +219,7 @@ pattern selection page*/
     P {
         color: rgba(21, 52, 86, 1);
         font-family: Verdana;
+        text-align: center;
     }
 }
 
@@ -209,21 +242,18 @@ pattern selection page*/
     margin-top: 10%;
     /*Want similar margins to home page but allow video to stand solo
     and supply list to have its own title / background*/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     /*height: 300px;
     width: 200px;*/
     position: relative;
     max-width: 1080px;
     margin: 0 auto;
-
-    video {
-        width: auto;
-        height: auto;
-        max-width: 688px;
-        max-height: 430;
+    h2 {
+        font-family: "Yusei Magic";
+        color: rgba(21, 52, 86, 1);
     }
+    font-family: Verdana;
 
 }
 
@@ -233,6 +263,7 @@ video and supply list containers to go in overall list and vid class
 .vid-display {
     text-align: right;
     align-content: flex-end;
+
     h2 {
         font-family: "Yusei Magic";
         color: rgba(21, 52, 86, 1);
@@ -277,6 +308,7 @@ flex overall and text, grid for images
         margin-bottom: 5%;
         display: flex;
         flex-direction: column;
+        font-family: Verdana;
     }
 
     .text-images {
