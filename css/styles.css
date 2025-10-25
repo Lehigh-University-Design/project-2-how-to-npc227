@@ -252,6 +252,7 @@ pattern selection page*/
     h2 {
         font-family: "Yusei Magic";
         color: rgba(21, 52, 86, 1);
+        text-align: left;
     }
     font-family: Verdana;
 
@@ -260,16 +261,6 @@ pattern selection page*/
 /*
 video and supply list containers to go in overall list and vid class
 */
-.vid-display {
-    text-align: right;
-    align-content: flex-end;
-
-    h2 {
-        font-family: "Yusei Magic";
-        color: rgba(21, 52, 86, 1);
-    }
-
-}
 
 /*
 flex overall and text, grid for images
