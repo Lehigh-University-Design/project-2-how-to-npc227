@@ -181,6 +181,8 @@ flex overall and text, grid for images
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
+    padding: 13px;
+    margin-bottom: 0;
 }
 
 .pattern-choices {
