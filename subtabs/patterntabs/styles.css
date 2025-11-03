@@ -1,0 +1,323 @@
+/* styles.css */
+
+/* Global variables */
+
+:root {}
+
+/* Main styles */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {}
+
+p {}
+
+/* Custom Classes / Styles */
+
+/*
+// <weight>: Use a value from 400 to 800
+// <uniquifier>: Use a unique and descriptive class name
+
+.wix-madefor-text-<uniquifier> {
+  font-family: "Wix Madefor Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} Base code for using "Wix Madefor Text" from Google fonts
+ 
+.yusei-magic-regular {
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*/
+
+.sticky-nav-bar {
+    /*high z-index because it was going behind main content on home page*/
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+    width: auto;
+    height: 90px;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1000;
+    font-weight: 200;
+    font-style: normal;
+    background-color: rgba(127, 185, 222, 1);
+    color: white;
+
+    /*specific item positioning*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 40px;
+
+    #logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        img {
+            height: 75%;
+        }
+    }
+
+    .navlinks {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2.1em;
+        gap: 35px;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+#home-header {
+    margin-top: 1em;
+    color: #153456;
+    font-family: "Yusei Magic";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.patt-head{
+    margin-top: 1em;
+    color: #153456;
+    font-family: "Yusei Magic";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.step-head{
+    justify-content: center;
+    color: #153456;
+    font-family: "Yusei Magic";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+/*
+flex overall and text, grid for images
+*/
+#home-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*height: 300px;
+    width: 200px;*/
+    background-color: rgba(215, 237, 249, 1);
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    font-family: Verdana;
+
+    /*
+    p {
+        margin-top: 15%;
+        color: rgba(21, 52, 86, 1);
+        margin-bottom: 5%; 
+        margin-left: 5%;
+        width: auto;
+    }
+
+    img {
+        margin-top: 15%;
+        margin-bottom: 5%;
+        margin-right: 5%;
+    }*/
+
+    #text-home {
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        line-height: 25px;
+        justify-content: center;
+    }
+
+    #home-images {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 20px;
+        justify-content: space-between;
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+
+    }
+}
+
+#footer {
+    background-color: #153456;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 13px;
+    margin-bottom: 0;
+}
+
+.pattern-choices {
+    /*Want similar margins to home page but allow paterns to stand on their own
+    without a background color*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*height: 300px;
+    width: 200px;*/
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+
+}
+
+/*Template for laying out pattern previews when on the 
+pattern selection page*/
+.pattern-preview {
+    margin: 0 auto;
+    margin-top: 4em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 470px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 13px;
+
+    h1 {
+        font-family: "Yusei Magic";
+        color: rgba(21, 52, 86, 1);
+    }
+
+    P {
+        color: rgba(21, 52, 86, 1);
+        font-family: Verdana;
+        text-align: center;
+        line-height: 25px;
+    }
+}
+
+.get-started-button {
+    background-color: #153456;
+    text-decoration: none;
+    color: white;
+    font-family: Verdana;
+    width: 125px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*Template for supply list and video of different patterns*/
+.list-and-vid {
+    padding: 45px;
+    /*Want similar margins to home page but allow video to stand solo
+    and supply list to have its own title / background*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    /*height: 300px;
+    width: 200px;*/
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+    h2 {
+        font-family: "Yusei Magic";
+        color: rgba(21, 52, 86, 1);
+        text-align: left;
+    }
+    font-family: Verdana;
+
+}
+
+/*
+video and supply list containers to go in overall list and vid class
+*/
+
+/*
+flex overall and text, grid for images
+*/
+.pattern-step {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*height: 300px;
+    width: 200px;*/
+    background-color: rgba(215, 237, 249, 1);
+    position: relative;
+    max-width: 920px;
+    margin: 0 auto;
+    margin-bottom: 5em;
+
+    /*
+    p {
+        margin-top: 15%;
+        color: rgba(21, 52, 86, 1);
+        margin-bottom: 5%; 
+        margin-left: 5%;
+        width: auto;
+    }
+
+    img {
+        margin-top: 15%;
+        margin-bottom: 5%;
+        margin-right: 5%;
+    }*/
+
+    .text-step {
+        padding: 50px;
+        line-height: 25px;
+        display: flex;
+        flex-direction: column;
+        font-family: Verdana;
+    }
+
+    .text-images {
+        margin-right: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-content: space-between;
+
+    }
+}
